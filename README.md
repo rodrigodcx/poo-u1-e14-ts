@@ -1,9 +1,12 @@
-# Unidade 1 - Exercício 13 - TypeScript
+# Unidade 1 - Exercício 14 - TypeScript
 Esse exercício foi escrito em TypeScript e testado com Jest.
 
-Implemente a validação dos campos loja, data_hora, CCF e COO na classe `Venda`.
+Crie mais casos de teste e os faça passar para os seguintes cenários:
 
-Implemente o construtor de Venda e o método `dados_venda` em `venda.ts` e os testes em `venda.test.ts` e os faça passar. Não esqueça de atualizar os testes de `Venda`, que também devem continuar passando.
+ - Venda sem itens - o cupom fiscal não pode ser impresso
+ - Venda com dois itens diferentes apontando para o mesmo produto - lança erro ao adicionar o item com produto repetido
+ - Item de Venda com quantidade zero ou negativa - não pode ser adicionado na venda
+ - Produto com valor unitário zero ou negativo - item não pode ser adicionado na venda com produto nesse estado
 
 ### Comando para execução
 `npm install`
